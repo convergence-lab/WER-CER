@@ -189,12 +189,12 @@ def wer(r, h):
     d = editDistance(r, h)
 
     # find out the manipulation steps
-    list = getStepList(r, h, d)
+    #list = getStepList(r, h, d)
 
     # print the result in aligned way
     result = float(d[len(r)][len(h)]) / len(r) * 100
     result = str("%.2f" % result) + "%"
-    alignedPrint(list, r, h, result)
+    #alignedPrint(list, r, h, result)
 
     #不一致の単語数
     word_error=d[len(r)][len(h)]
